@@ -24,6 +24,7 @@
     <ProjectGuid>{6b57b248-7d34-4506-aa64-2997079e14a7}</ProjectGuid>
     <RootNamespace>ajwKeyBoard</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>jw_Input</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

@@ -6,7 +6,7 @@
 
 namespace ajwCommon
 {
-	class AJW_KEYBOARD_DLLEXPORT KeyBoard
+	class AJW_KEYBOARD_DLLEXPORT Input
 	{
 		const static DWORD KEYMAX = 256;
 	private:
@@ -23,8 +23,8 @@ namespace ajwCommon
 		BYTE mapState[KEYMAX];
 	
 	public:
-		KeyBoard();
-		~KeyBoard();
+		Input();
+		~Input();
 	
 		void Update();
 	

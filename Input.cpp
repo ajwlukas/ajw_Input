@@ -1,21 +1,21 @@
 #include "pch.h"
 
-#include "KeyBoard.h"
+#include "Input.h"
 
 //아아 마이크 테스트 마이크 테스트
 
 namespace ajwCommon
 {
-	KeyBoard::KeyBoard()
+	Input::Input()
 		: curState{}, oldState{}, mapState{}
 	{
 	}
 
-	KeyBoard::~KeyBoard()
+	Input::~Input()
 	{
 	}
 
-	void KeyBoard::Update()
+	void Input::Update()
 	{
 		memcpy(oldState, curState, sizeof(oldState));
 

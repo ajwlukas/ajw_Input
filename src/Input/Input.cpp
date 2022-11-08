@@ -48,13 +48,13 @@ namespace ajwCommon
 		GetKeyState(0);
 
 
-		//::GetCursorPos(&mousePos);
-		//::ScreenToClient(GetActiveWindow(), &mousePos);
-		//
-		//mouseDx = mousePos.x - oldMousePos.x;
-		//mouseDy = mousePos.y - oldMousePos.y;
-		//
-		////printf("dx : %.1f, dy : %.1f \n",mouseDx, mouseDy);
-		//oldMousePos = mousePos;
+		::GetCursorPos(&mousePos);
+		::ScreenToClient(GetActiveWindow(), &mousePos);
+		
+		mouseDiff.x = mousePos.x - oldMousePos.x;
+		mouseDiff.y = mousePos.y - oldMousePos.y;
+		
+		//printf("dx : %.1f, dy : %.1f \n",mouseDx, mouseDy);
+		oldMousePos = mousePos;
 	}
 }

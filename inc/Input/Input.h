@@ -2,7 +2,7 @@
 
 #include <Windows.h>
 
-#include "ajwKeyBoard.h"
+#include "dll.h"
 
 namespace ajwCommon
 {
@@ -31,5 +31,13 @@ namespace ajwCommon
 		bool Down(UINT key) { return mapState[key] == DOWN; }
 		bool Up(UINT key) { return mapState[key] == UP; }
 		bool Press(UINT key) { return mapState[key] == PRESS; }
+
+		POINT MousePos() { return mousePos; }
+		POINT MouseDiff() { return mouseDiff; }
+	private:
+		POINT mousePos;
+		POINT mouseDiff;
+
+		POINT oldMousePos;
 	};
 }

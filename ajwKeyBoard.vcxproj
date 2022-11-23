@@ -109,6 +109,9 @@
       </Command>
     </PreLinkEvent>
     <PostBuildEvent />
+    <PostBuildEvent>
+      <Command>xcopy /E /S /Y /R "$(OutputPath)*" "$(OutputPath)..\_Sample\*"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -134,6 +137,9 @@
       </Command>
     </PreLinkEvent>
     <PostBuildEvent />
+    <PostBuildEvent>
+      <Command>xcopy /E /S /Y /R "$(OutputPath)*" "$(OutputPath)..\_Sample\*"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -155,6 +161,9 @@
       </Command>
     </PreLinkEvent>
     <PostBuildEvent />
+    <PostBuildEvent>
+      <Command>xcopy /E /S /Y /R "$(OutputPath)*" "$(OutputPath)..\_Sample\*"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -180,6 +189,9 @@
       </Command>
     </PreLinkEvent>
     <PostBuildEvent />
+    <PostBuildEvent>
+      <Command>xcopy /E /S /Y /R "$(OutputPath)*" "$(OutputPath)..\_Sample\*"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="inc\Input\dll.h" />

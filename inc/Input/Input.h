@@ -21,10 +21,15 @@ namespace ajwCommon
 		BYTE curState[KEYMAX];
 		BYTE oldState[KEYMAX];
 		BYTE mapState[KEYMAX];
-	
-	public:
+
 		Input();
 		~Input();
+	public:
+		static Input& Get() { static Input instance;  return instance; }
+
+		Input(Input const&) = delete;
+		void operator=(Input const&) = delete;
+
 	
 		void Update();
 	
